@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#resource">Resource</a>
+                    <i class='bx bx-chevron-down'></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="#resource1">Articles</a></li>
+                        <li><a href="#resource2">Download</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <ul class="navbar-btn">
+                        <li>
+                            <a href="#">
+                                <div class="btn btn1">Login</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#resource2">
+                                <div class="btn btn2">Catalog</div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="carousel">
+            <div class="carousel-item"><img src="img/home1.jpg" alt="home1"></div>
+            <div class="carousel-item"><img src="img/home2.jpg" alt="home2"></div>
+            <div class="carousel-item"><img src="img/home3.jpg" alt="home3"></div>
+            <div class="home-text">
+                <h1>Welcome to Our Website!</h1>
+                <p>We strive to provide high-quality products and excellent services to our valued customers. Explore our website to discover the latest offerings and find the perfect products for your needs.
+                </p>
+                <div class="home-btn">
+                    <div class="btn btn2">
+                        Get started
+                        <i class='bx bx-right-arrow-alt bx-tada'></i>
+                    </div>
+                    <a href="#contact"><div class="btn btn1">Talk to sales</div></a>
+                    
+                </div>
+            </div>
+            <div class="btnNav">
+                <button class="nav-btn prev">&lt;</button>
+                <button class="nav-btn next">&gt;</button>
+            </div>
+            <div class="carousel-nav">
+                <div class="carousel-indicators">
+                    <div class="indicator" data-slide-to="0"></div>
+                    <div class="indicator" data-slide-to="1"></div>
+                    <div class="indicator" data-slide-to="2"></div>
+                </div>            
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-text">
+            <span style="font-weight: 200;">About Us</span>
+            <h2>Boost your healthy with our product</h2>
+            <p>
+                Our company is dedicated to delivering innovative solutions that meet the ever-changing needs of our customers.
+            </p>
+            <div class="about-btn">
+                <div class="btn btn2">Buy Now</div>
+                <a href="#contact"><div class="btn btn1">Talk to sales</div></a>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="img/img1.jpg" alt="">
+        </div>
+    </section>
+    <section id="resource1" class="resource">
+        <div class="resource-text">
+            <div>
+                <h2>What our client say</h2>
+                <p>Our clients' experiences speak volumes about the effectiveness of our products. Read on to discover what they have to say.</p>
+            </div>
+            <div class="resource-btn">
+                <div class="btn btn2">
+                    Get started
+                    <i class='bx bx-right-arrow-alt bx-tada'></i>
+                </div>
+                <a href="#contact"><div class="btn btn1">Talk to sales</div></a>
+            </div>
+        </div>
+        <div class="resource-nav">
+            <button class="nav-btn prev" id="slide-arrow-prev" onclick="prevSlide()">&lt;</button>
+            <button class="nav-btn next" id="slide-arrow-next" onclick="nextSlide()">&gt;</button>
+        </div>
+        <div class="resource-box" id="resourceContainer">
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>
+                    "I've been using Herbal HPAI products for a month, and the results are amazing! I feel more energized and healthier than ever before."
+                </p>
+                <div style="text-align: center;">
+                    <h3>Alexander</h3>
+                    <img src="img/rev1.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>
+                    "Herbal HPAI products have truly made a difference in my life. I recommend them to anyone looking for natural and effective solutions."
+                </p>
+                <div style="text-align: center;">
+                    <h3>Kevin Robert</h3>
+                    <img src="img/rev2.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>
+                    "HPAI products have transformed my life. The natural ingredients and effective formulations truly make a difference. I'm a satisfied customer!"
+                </p>
+                <div style="text-align: center;">
+                    <h3>Meilia</h3>
+                    <img src="img/rev3.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>
+                    "As someone who values health and wellness, I can confidently say that HPAI's herbal products are top-notch. Highly recommended!"
+                </p>
+                <div style="text-align: center;">
+                    <h3>Gabriel</h3>
+                    <img src="img/men.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>
+                    "The herbal products from HPAI have exceeded my expectations. They are natural, effective, and have improved my overall well-being."
+                </p>
+                <div style="text-align: center;">
+                    <h3>Marchelino</h3>
+                    <img src="img/men.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>
+                    "I am amazed by the quality of HPAI's herbal products. They have become an essential part of my daily routine for a healthier lifestyle."
+                </p>
+                <div style="text-align: center;">
+                    <h3>Chlara Ambert</h3>
+                    <img src="img/women.jpg" alt="">
+                </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>
+                    "HPAI's herbal products have made a significant impact on my health. I've experienced positive changes and recommend them to everyone."
+                </p>
+                <div style="text-align: center;">
+                    <h3>Angelina</h3>
+                    <img src="img/women.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="resource2" class="download">
+        <div class="download-box dark">
+            <h1>Explore Our Herbal Products</h1>
+            <p>Download our product catalog to explore our wide range of herbal products. Discover the natural goodness that HPAI offers for your health and well-being.</p>
+            <div class="about-btn">
+                <div class="btn btn2">
+                    <i class="bx bxl-apple"></i>
+                    Download for iOS
+                </div>
+                <a href="#contact"><div class="btn btn1">Talk to sales</div></a>
+            </div>
+        </div>
+        <div class="download-box">
+            <h1>Explore Our Herbal Products</h1>
+            <p>Download our product catalog to explore our wide range of herbal products. Discover the natural goodness that HPAI offers for your health and well-being.</p>
+            <div class="about-btn">
+                <div class="btn btn2">
+                    <i class="bx bxl-play-store"></i>
+                    Download for Android
+                </div>
+                <a href="#contact"><div class="btn btn1">Talk to sales</div></a>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact-text">
+            <span style="font-weight: 200; margin-bottom: -15px;">Contact</span>
+            <h1>Get in Touch</h1>
+            <p>Have questions or need assistance? Feel free to reach out to us. Our team is here to help you on your journey to a healthier life with Herbal HPAI.</p>
+            <div class="contact-icon">
+                <p>
+                    <a href="mailto:abdqdmim@gmail.com" target="_blank"><i class="bx bx-envelope"></i>
+                    contact@hni.net</a>
+                </p>
+                <p>
+                    <a href="https://wasap.at/SaMoAW" target="_blank"><i class="bx bx-phone"></i>
+                    +62 857 7239 6815</a>
+                </p>
+                <p>
+                    <a href="https://s.id/1YzDl" target="_blank"><i class="bx bx-map"></i>
+                    794 Mcallister St San Francisco, 94102</a>
+                </p>
+                <p>
+                    <div class="sosmed-section">
+                        <ul>
+                            <li><a href="https://www.facebook.com/abdulahqaid.muaadz/" target="_blank"><i class="bx bxl-facebook"></i> Facebook</a></li>
+                            <li><a href="https://twitter.com/_Mucaa" target="_blank"><i class="bx bxl-twitter"></i> Twitter</a></li>
+                            <li><a href="https://www.instagram.com/abdullahqaidmuaadz/" target="_blank"><i class="bx bxl-instagram"></i> Instagram</a></li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="#">
+                <input type="text" placeholder="John Carter">
+                <input type="text" placeholder="example@gmail.com">
+                <input type="text" placeholder="+1 123 456 789">
+                <textarea rows="6" placeholder="Please type your message here..."></textarea>
+                <button>Send message</button>
+            </form>
+        </div>
+    </section>
+    <section class="sosmed">        
+        <div class="sosmed-section">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15851.634348953423!2d106.854569!3d-6.658251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c9a4dcea74a1%3A0x18d5e3e16ef0ccfd!2sSC%20HNI%20HPAI%20Bendungan!5e0!3m2!1sid!2sid!4v1702473338591!5m2!1sid!2sid" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div class="sosmed-section">
+            <h2>Featured Video</h2>
+            <iframe src="https://www.youtube.com/embed/p2RicVJjkMI?si=c0yJpKg4aLppb5uM" title="YouTube video player" frameborder="0" width="500" height="250" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">Copyright &copy; 2023 Herbal HPAI | All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
