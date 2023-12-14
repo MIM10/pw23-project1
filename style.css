@@ -577,18 +577,18 @@ footer {
         padding: 17px 20px;
     }
     .navbar {
-        display: none;
         flex-direction: column;
         justify-content: center;
         position: absolute;
-        top: 70px;
+        top: -780px;
         left: 0;
         right: 0;
-        background-color: #0d0a2ca1;
+        background-color: #0d0a2c;
+        transition: 0.5s ;
     }
     .navbar.active {
-        display: flex;
         padding-bottom: 40px;
+        top: 80px;
     }
     #menu-icon {
         display: block; 
